@@ -19,7 +19,7 @@ namespace Practice1
             cmtKwai._userName = "Saito";
             cmtKwai._comments = "Be happy in your work.";
             kwaiComments.Add(cmtKwai);
-            
+            //kwai._comment.Add(cmtKwai);            
             kwai._comment = kwaiComments;
 
             //Lawrence of Arabia
