@@ -9,34 +9,36 @@ namespace Practice3
         private DateOnly _date;
         private TimeOnly _time;
         private string _address;
+        private string _myType;
 
         public Event()
         {
 
         }
-        public string tooShort()
+        public string GetMyType()
         {
-            //This shouldn't need encapsulation becasue its a type, right?
-            
-            //Console.WriteLine($"{GetTitle()} {GetDesc()} {GetDate()} {GetTime()} {GetAddress()}");
-            string tooShortType = "";
             switch(this.GetType().ToString())
             {
                 case "Practice3.Lecture" :
-                    tooShortType = "Lecture";
+                    _myType = "Lecture";
                     break;                
                 case "Practice3.Gathering" :
-                    tooShortType = "Gathering";
+                    _myType = "Gathering";
                     break;
                 case "Practice3.Reception" :
-                    tooShortType = "Reception";
+                    _myType = "Reception";
                     break;
                 default:
-                    tooShortType = "Standard Event";
+                    _myType = "Standard Event";
                     break;
             }
 
-            return $"{GetTitle()} {GetDate()} ({tooShortType})";
+            return _myType;
+        }
+
+        public string tooShort()
+        {
+            return $"{GetTitle()} {GetDate()} ({GetMyType()})";
         }
 
         public string PrintEvent()

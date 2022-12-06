@@ -22,7 +22,6 @@ namespace Practice3
             Console.WriteLine(l1.PrintEvent());
             Console.WriteLine(l1.PrintLecture());
             Console.WriteLine(l1.tooShort());
-            //Console.WriteLine(l1.GetType());
 
 
             Gathering g1 = new Gathering();
