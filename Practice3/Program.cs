@@ -37,8 +37,7 @@ namespace Practice3
             Console.WriteLine(g1.PrintEvent());
             Console.WriteLine(g1.PrintGathering());
             Console.WriteLine(g1.tooShort());
-
-
+            
 
             Reception r1 = new Reception();
             r1.SetRegistered(100);
